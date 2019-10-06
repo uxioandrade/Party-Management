@@ -22,36 +22,36 @@ import javax.mail.internet.MimeMessage;
  * @author alumnogreibd
  */
 public class FachadaAplicacion {
-    gui.FachadaGui fgui;
-    database.FachadaBaseDatos fbd;
-    GestionUsuarios cu;
-    GestionImagenes ci;
-    GestionAudios cad;
-    GestionRedes cr;
-    GestionGalerias cg;
-    GestionAccesos ca;
-    GestionMuro cm;
-    GestionFestas cf;
-    private Usuario usuarioActual;
+    gui.GuiFacade fgui;
+    database.DatabaseFacade fbd;
+    UsersHandler cu;
+    ImageHandler ci;
+    AudioHandler cad;
+    SocialNetworksHandler cr;
+    GalleryHandler cg;
+    AccessHandler ca;
+    WallHandler cm;
+    PartyHandler cf;
+    private User usuarioActual;
     
     public FachadaAplicacion(){
-        fgui=new gui.FachadaGui(this);
-        fbd = new database.FachadaBaseDatos(this);
-        cu = new GestionUsuarios(fgui, fbd);
-        ci = new GestionImagenes(fgui,fbd);
-        cad = new GestionAudios(fgui,fbd);
-        cr = new GestionRedes(fgui,fbd);
-        cg = new GestionGalerias(fgui,fbd);
-        ca = new GestionAccesos(fgui,fbd);
-        cm = new GestionMuro(fgui,fbd);
-        cf = new GestionFestas(fgui,fbd);
+        fgui=new gui.GuiFacade(this);
+        fbd = new database.DatabaseFacade(this);
+        cu = new UsersHandler(fgui, fbd);
+        ci = new ImageHandler(fgui,fbd);
+        cad = new AudioHandler(fgui,fbd);
+        cr = new SocialNetworksHandler(fgui,fbd);
+        cg = new GalleryHandler(fgui,fbd);
+        ca = new AccessHandler(fgui,fbd);
+        cm = new WallHandler(fgui,fbd);
+        cf = new PartyHandler(fgui,fbd);
     }
     
-    public void setUsuarioActual(Usuario u){
+    public void setUsuarioActual(User u){
         this.usuarioActual = u;
     }
     
-    public Usuario getUsuarioActual(){
+    public User getUsuarioActual(){
         return this.usuarioActual;
 
     }
@@ -94,7 +94,7 @@ public class FachadaAplicacion {
         }catch(MessagingException mex){mex.printStackTrace();}
     }
     
-    public gui.FachadaGui getFachadaGui(){
+    public gui.GuiFacade getFachadaGui(){
         return this.fgui;
     }
     
@@ -107,11 +107,11 @@ public class FachadaAplicacion {
 
     }
     
-    public Usuario comprobarAutentificacion(String idUsuario, String clave){
+    public User comprobarAutentificacion(String idUsuario, String clave){
         return cu.comprobarAutentificacion(idUsuario,clave);
     }
     
-    public Boolean darAltaUsuario(Usuario u){
+    public Boolean darAltaUsuario(User u){
         return cu.darAltaUsuario(u);
     }
     
@@ -119,7 +119,7 @@ public class FachadaAplicacion {
         return cu.recuperarContrasinal(email);
     }
     
-    public void actualizarContrasinal(Usuario u,String contrasinal){
+    public void actualizarContrasinal(User u,String contrasinal){
         cu.cambiarContrasinal(u,contrasinal);
     }
     
@@ -135,15 +135,15 @@ public class FachadaAplicacion {
         cu.recargarSaldo(cantidad,this.usuarioActual.getId());
     }
     
-    public RedSocial consultarRedSocial(String idUsuario, String red){
+    public SocialNetwork consultarRedSocial(String idUsuario, String red){
         return cr.consultarRedSocial(idUsuario,red);
     }
     
-    public java.util.ArrayList<RedSocial> consultarRedes(String usuario){
+    public java.util.ArrayList<SocialNetwork> consultarRedes(String usuario){
         return cr.consultarRedes(usuario);
     }
     
-    public void anhadirRedSocial(RedSocial red){
+    public void anhadirRedSocial(SocialNetwork red){
         this.cr.anhadirRedSocial(red);
     }
 
@@ -151,11 +151,11 @@ public class FachadaAplicacion {
         this.cr.eliminarRedSocial(plataforma, id);
     }
     
-    public java.util.ArrayList<Imagen> consultarImagenesGaleria(int festa, String galeria){
+    public java.util.ArrayList<Image> consultarImagenesGaleria(int festa, String galeria){
         return ci.consultarImagenesGaleria(festa, galeria);
     }
     
-    public boolean subirImagen(Imagen imagen,String pie) {
+    public boolean subirImagen(Image imagen,String pie) {
         return ci.subirImagen(imagen,pie);
     }
     
@@ -178,7 +178,7 @@ public class FachadaAplicacion {
     public void acabarAcceso(String id){
         this.ca.acabarAcceso(id);
     }
-    public void ComentarMuro(PostMuro post){
+    public void ComentarMuro(WallPost post){
         cm.ComentarMuro(post);
     }
     
@@ -186,7 +186,7 @@ public class FachadaAplicacion {
         cm.borrarPost(u, festa, ts);
     }
     
-    public java.util.List<PostMuro> consultarPosts(int festa){
+    public java.util.List<WallPost> consultarPosts(int festa){
         return this.cm.consultarPosts(festa);
     }
 
@@ -207,7 +207,7 @@ public class FachadaAplicacion {
         return saldoEntradas + saldoActual;
     }
 
-    public void eliminarImagen(Imagen imagen) {
+    public void eliminarImagen(Image imagen) {
         this.ci.eliminarImagen(imagen);
     }
 
@@ -215,7 +215,7 @@ public class FachadaAplicacion {
         this.cad.eliminarAudio(audio);
     }
 
-    public void editarPerfil(Usuario u) {
+    public void editarPerfil(User u) {
         this.cu.editarPerfil(u);
     }
 
@@ -227,15 +227,15 @@ public class FachadaAplicacion {
         this.cu.actualizarUrlPerfil(url, id);
     }
     
-    public void insertarMensaje(app.Mensaje m){
+    public void insertarMensaje(app.Message m){
         this.cu.insertarMensaje(m);
     }
     
-    public void borrarMensaje(app.Mensaje m){
+    public void borrarMensaje(app.Message m){
         this.cu.borrarMensaje(m);
     }
     
-    public java.util.List<app.Mensaje> consultarMensajes(String emisor, String receptor){
+    public java.util.List<app.Message> consultarMensajes(String emisor, String receptor){
         return this.cu.consultarMensajes(emisor, receptor);
     }
     
@@ -243,7 +243,7 @@ public class FachadaAplicacion {
         return this.cu.buscarUsuario(id);
     }
     
-    public Usuario seleccionarUsuario(String id){
+    public User seleccionarUsuario(String id){
         return this.cu.seleccionarUsuario(id);
     }
     
