@@ -1,0 +1,686 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JDialogFormInfo">
+  <NonVisualComponents>
+    <Component class="javax.swing.JFileChooser" name="exploradorArchivos">
+    </Component>
+  </NonVisualComponents>
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="2"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace max="32767" attributes="0"/>
+              <Component id="jLabel1" min="-2" pref="252" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="253" max="-2" attributes="0"/>
+          </Group>
+          <Component id="jTabbedPane1" alignment="0" max="32767" attributes="0"/>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jTabbedPane1" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="jLabel1">
+      <Properties>
+        <Property name="horizontalAlignment" type="int" value="0"/>
+        <Property name="text" type="java.lang.String" value="FORMULARIO DE REGISTRO"/>
+      </Properties>
+    </Component>
+    <Container class="javax.swing.JTabbedPane" name="jTabbedPane1">
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout"/>
+      <SubComponents>
+        <Container class="javax.swing.JPanel" name="jPanel2">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="Empresa">
+                <Property name="tabTitle" type="java.lang.String" value="Empresa"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace min="-2" pref="364" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jLabel5" alignment="0" min="-2" pref="147" max="-2" attributes="0"/>
+                                  <Component id="jLabel8" alignment="0" min="-2" pref="21" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="100" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="1" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="btnSubir" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="lblFoto1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace min="-2" pref="130" max="-2" attributes="0"/>
+                                      <Component id="fotoPerfil" min="-2" pref="120" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                      <Component id="txtBiografiaEmpresa" alignment="0" max="32767" attributes="0"/>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="lblDireccion" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Component id="lblWeb" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="txtWeb" min="-2" pref="270" max="-2" attributes="0"/>
+                                              <Component id="txtCif" min="-2" pref="270" max="-2" attributes="0"/>
+                                              <Component id="txtDireccion" min="-2" pref="270" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="75" max="-2" attributes="0"/>
+                                  <Component id="btnRegisterEmpresa" min="-2" pref="164" max="-2" attributes="0"/>
+                                  <EmptySpace max="32767" attributes="0"/>
+                                  <Component id="btnSalir1" min="-2" pref="160" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="185" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="lblFalloIdEmpresa" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="lblEmail1" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace min="-2" pref="86" max="-2" attributes="0"/>
+                                          <Component id="txtEmailEmpresa" min="-2" pref="125" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Component id="lblFalloPasswordEmpresa" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="lblConfirmarClave1" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="txtPasswordEmpresa" max="32767" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace min="-2" pref="87" max="-2" attributes="0"/>
+                                              <Component id="txtConfirmPasswordEmpresa" min="-2" pref="124" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="103" alignment="0" groupAlignment="1" attributes="0">
+                                              <Component id="txtNomeEmpresa" alignment="1" min="-2" pref="128" max="-2" attributes="0"/>
+                                              <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                                                  <Component id="lblFalloEmailEmpresa" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                  <Group type="102" alignment="1" attributes="0">
+                                                      <Component id="lblNickname1" min="-2" max="-2" attributes="0"/>
+                                                      <EmptySpace max="32767" attributes="0"/>
+                                                      <Component id="txtIdEmpresa" min="-2" pref="128" max="-2" attributes="0"/>
+                                                  </Group>
+                                              </Group>
+                                          </Group>
+                                      </Group>
+                                      <Component id="lblNome1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace min="314" pref="582" max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="1" attributes="0">
+                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="fotoPerfil" min="-2" pref="112" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+                              <Component id="lblFoto1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Component id="btnSubir" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace pref="101" max="32767" attributes="0"/>
+                      <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="txtBiografiaEmpresa" min="-2" pref="97" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLabel8" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtCif" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblDireccion" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtDireccion" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblWeb" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtWeb" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="151" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                          <Component id="lblFalloIdEmpresa" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="lblNickname1" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="txtIdEmpresa" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="lblNome1" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="txtNomeEmpresa" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="lblFalloEmailEmpresa" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="lblEmail1" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="txtEmailEmpresa" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
+                          <Component id="lblFalloPasswordEmpresa" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="txtConfirmPasswordEmpresa" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="lblConfirmarClave1" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="txtPasswordEmpresa" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace pref="229" max="32767" attributes="0"/>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="btnSalir1" alignment="0" pref="58" max="32767" attributes="0"/>
+                              <Component id="btnRegisterEmpresa" alignment="0" max="32767" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="lblFalloIdEmpresa">
+              <Properties>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="4" green="4" red="fb" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Ese nickname ya est&#xe1; siendo usado"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblNickname1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Nickname"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtIdEmpresa">
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblNome1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Nome"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtNomeEmpresa">
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblFalloEmailEmpresa">
+              <Properties>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="0" green="0" red="ff" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Por favor, introduzca un email v&#xe1;lido"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblEmail1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Email"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtEmailEmpresa">
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblFalloPasswordEmpresa">
+              <Properties>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="0" green="0" red="ff" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Las contrase&#xf1;as introducidas no coinciden"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel7">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Clave"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblConfirmarClave1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Confirmar clave:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JPasswordField" name="txtPasswordEmpresa">
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_SerializeTo" type="java.lang.String" value="VRegistro_txtPassword"/>
+              </AuxValues>
+            </Component>
+            <Component class="javax.swing.JPasswordField" name="txtConfirmPasswordEmpresa">
+            </Component>
+            <Component class="javax.swing.JButton" name="btnRegisterEmpresa">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Registrarse"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnRegisterEmpresaActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="btnSalir1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Salir"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtBiografiaEmpresa">
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel5">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Biografia"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblFoto1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Foto Perfil:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel8">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="CIF"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtCif">
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblDireccion">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Direcci&#xf3;n"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtDireccion">
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblWeb">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Web"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtWeb">
+            </Component>
+            <Component class="javax.swing.JToggleButton" name="fotoPerfil">
+              <Properties>
+                <Property name="contentAreaFilled" type="boolean" value="false"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="fotoPerfilActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="btnSubir">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Subir archivo"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSubirActionPerformed"/>
+              </Events>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="jPanel1">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="Particular">
+                <Property name="tabTitle" type="java.lang.String" value="Particular"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="75" max="-2" attributes="0"/>
+                              <Component id="btnRegister" min="-2" pref="164" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Component id="btnSalir" min="-2" pref="160" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="186" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="lblFalloId" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblFalloPassword" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" attributes="0">
+                                              <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace min="-2" pref="87" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="1" attributes="0">
+                                              <Component id="lblConfirmarClave" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="txtPassword" min="-2" pref="124" max="-2" attributes="0"/>
+                                          <Component id="txtConfirmPassword" min="-2" pref="124" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <Component id="lblNome" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="lblEmail" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="32767" attributes="0"/>
+                                          <Component id="txtEmail" min="-2" pref="125" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="103" alignment="0" groupAlignment="1" attributes="0">
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="lblNickname" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
+                                              <Component id="txtId" min="-2" pref="128" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Component id="txtNome" alignment="1" min="-2" pref="128" max="-2" attributes="0"/>
+                                          <Component id="lblFalloEmail" alignment="1" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                              <EmptySpace min="-2" pref="80" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblFalloFecha" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Group type="103" alignment="0" groupAlignment="1" attributes="0">
+                                      <Group type="102" attributes="0">
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <Component id="lblFoto" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
+                                                  <Component id="btnSubir1" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Component id="jLabel4" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                                          <Component id="fotoPerfil1" min="-2" pref="120" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                          <Group type="102" attributes="0">
+                                              <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="btnGenero" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="32767" attributes="0"/>
+                                              <Component id="btnSoltero" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Component id="txtBiografia" alignment="0" min="-2" pref="362" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                              <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Group type="102" alignment="1" attributes="0">
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="lblFalloId" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblFoto" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="btnSubir1" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="lblNickname" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txtId" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="lblNome" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txtNome" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="85" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <Group type="103" groupAlignment="1" attributes="0">
+                                  <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
+                                  <Component id="fotoPerfil1" min="-2" pref="112" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="txtBiografia" alignment="3" min="-2" pref="95" max="-2" attributes="0"/>
+                                  <Component id="lblFalloEmail" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="btnGenero" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="btnSoltero" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="lblEmail" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txtEmail" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
+                              <Component id="lblFalloPassword" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblFalloFecha" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel6" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtConfirmPassword" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="txtPassword" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblConfirmarClave" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="178" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="btnSalir" pref="58" max="32767" attributes="0"/>
+                          <Component id="btnRegister" max="32767" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="lblNickname">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Nickname"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblFalloPassword">
+              <Properties>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="0" green="0" red="ff" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Las contrase&#xf1;as introducidas no coinciden"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblConfirmarClave">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Confirmar clave:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblFalloEmail">
+              <Properties>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="0" green="0" red="ff" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Por favor, introduzca un email v&#xe1;lido"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtId">
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblFalloId">
+              <Properties>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="4" green="4" red="fb" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Ese nickname ya est&#xe1; siendo usado"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel4">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Biografia"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtNome">
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblNome">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Nome"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel6">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Clave"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtEmail">
+            </Component>
+            <Component class="javax.swing.JButton" name="btnRegister">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Registrarse"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnRegisterActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblEmail">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Email"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="btnSalir">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Salir"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblFoto">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Foto Perfil:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JPasswordField" name="txtPassword">
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_SerializeTo" type="java.lang.String" value="VRegistro_txtPassword"/>
+              </AuxValues>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtBiografia">
+            </Component>
+            <Component class="javax.swing.JPasswordField" name="txtConfirmPassword">
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel2">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="lblGenero"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JComboBox" name="btnGenero">
+              <Properties>
+                <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                  <StringArray count="3">
+                    <StringItem index="0" value="Hombre"/>
+                    <StringItem index="1" value="Mujer"/>
+                    <StringItem index="2" value="Otro"/>
+                  </StringArray>
+                </Property>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JRadioButton" name="btnSoltero">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Estoy Soltero/a"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel3">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Fecha Nacimiento"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblFalloFecha">
+              <Properties>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="24" green="9" red="fe" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Por favor, seleccione una fecha"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="btnSubir1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Subir archivo"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSubir1ActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JToggleButton" name="fotoPerfil1">
+              <Properties>
+                <Property name="contentAreaFilled" type="boolean" value="false"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="fotoPerfil1ActionPerformed"/>
+              </Events>
+            </Component>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>
