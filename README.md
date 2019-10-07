@@ -1,17 +1,22 @@
 # Party Management App
 
+![Screenshot](https://github.com/UxioAndrade/Party-Management/blob/master/resources/screenshot.png)
+
 > Java+Postgresql implementation of a party management app
 
 ### Setting everything up
 
-* First of all, navigate to the root directory and create a file called ```baseDatos.properties``
+* First of all, navigate to the root directory and create a file called ``baseDatos.properties``
 * This file must contain the following lines: 
-```gestor=postgresql
+
+```
+  gestor=postgresq
   servidor=localhost
   puerto=5432
   baseDatos=partymanagement
   usuario=postgres
-  clave=admin```
+  clave=admin
+```
 
 * Now, navigate to the src/ directory run each one of the following commands:
 
